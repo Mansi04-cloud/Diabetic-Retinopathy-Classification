@@ -22,3 +22,4 @@ Publicly available Diabetic Retinopathy datasets.
 - OpenCV
 - TensorFlow
 - Keras
+Added Data Collection Phase
