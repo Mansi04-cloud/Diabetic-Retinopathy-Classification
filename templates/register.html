@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DR Registration Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="navbar">
+    <h2>Diabetic Retinopathy Classification</h2>
+    <div>
+        <a href="/">Home</a>
+        <a href="/login">Login</a>
+        <a href="/register">Register</a>
+    </div>
+</div>
+
+<div class="auth-wrapper">
+    <div class="auth-card">
+        <h2>DR Registration Page</h2>
+
+        <form method="POST">
+            <input type="text" name="name"
+                   placeholder="Enter Name" required>
+
+            <input type="email" name="email"
+                   placeholder="Enter Email" required>
+
+            <!-- 4 Digit Password -->
+            <input type="password" name="password"
+                   placeholder="4 Digit Password"
+                   pattern="\d{4}" maxlength="4"
+                   required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

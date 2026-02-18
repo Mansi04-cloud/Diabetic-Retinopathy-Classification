@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diabetic Retinopathy Classification</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <h2>Diabetic Retinopathy Classification</h2>
+    <div>
+        <a href="/">Home</a>
+        <a href="/login">Login</a>
+        <a href="/register">Register</a>
+    </div>
+</div>
+
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+    <h1 style="margin-top:40px;">NORMAL EYE & DIABETIC RETINOPATHY</h1>
+
+    <div class="image-section">
+        <div class="image-box">
+            <h3>Normal Eye</h3>
+            <img src="{{ url_for('static', filename='samples/no_dr.png') }}">
+        </div>
+
+        <div class="image-box">
+            <h3>Diabetic Retinopathy</h3>
+            <img src="{{ url_for('static', filename='samples/proliferative.png') }}">
+        </div>
+    </div>
+
+
+    <!-- ABOUT PROJECT -->
+    <div class="about-section">
+
+        <h2>ABOUT PROJECT</h2>
+
+        <p>
+            <strong>Problem:</strong> Diabetic Retinopathy (DR) is a serious complication 
+            of diabetes that affects the blood vessels of the retina. If not detected 
+            at an early stage, it may lead to permanent vision loss or blindness. 
+            Manual screening of retinal fundus images is time-consuming and requires 
+            expert ophthalmologists.
+        </p>
+
+        <p>
+            <strong>Solution:</strong> This project uses Deep Learning and Convolutional 
+            Neural Networks (CNN) to automatically classify retinal images into 
+            five stages: No DR, Mild, Moderate, Severe, and Proliferative DR.
+        </p>
+
+        <p>
+            The web application provides a secure login and registration system. 
+            After authentication, users can upload a fundus image and instantly 
+            receive the predicted stage along with confidence score. 
+            This system helps in early detection, faster screening, 
+            and supports medical professionals in decision making.
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>

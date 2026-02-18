@@ -1,0 +1,215 @@
+/* ================= GENERAL ================= */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    background-color: #333;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2 {
+    color: white;
+    margin: 0;
+    font-weight: 600;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* ================= CONTAINER ================= */
+
+.container {
+    margin-top: 40px;
+}
+
+/* ================= HOME PAGE ================= */
+
+.image-section {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 40px;
+}
+
+.image-box img {
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.15);
+}
+
+.about-section {
+    margin-top: 70px;
+    padding: 40px;
+    background: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.about-section p {
+    margin-top: 15px;
+    line-height: 1.7;
+    color: #444;
+}
+
+/* ================= LOGIN & REGISTER ================= */
+
+.auth-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+.auth-card {
+    width: 400px;
+    padding: 45px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 8px 30px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.auth-card h2 {
+    margin-bottom: 25px;
+}
+
+.auth-card input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.auth-card input:focus {
+    outline: none;
+    border-color: #333;
+}
+
+.auth-card button {
+    width: 100%;
+    padding: 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.auth-card button:hover {
+    background-color: #555;
+}
+
+/* ================= PREDICTION PAGE ================= */
+
+.prediction-preview img {
+    width: 250px;
+    margin: 25px 0;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+}
+
+/* ================= RESULT PAGE ================= */
+
+.main-image img {
+    width: 420px;
+    margin-top: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.2);
+}
+
+.result-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.stage-name {
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+.confidence-text {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #444;
+}
+
+/* ================= SAMPLE CARDS ================= */
+
+.samples {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 190px;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.card img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.card p {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card.active {
+    border: 3px solid #2e7d32;
+    box-shadow: 0px 5px 20px rgba(46,125,50,0.3);
+}
+
+/* ================= BUTTON ================= */
+
+.btn {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 10px 25px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background-color: #555;
+}

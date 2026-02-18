@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<div class="navbar">
+    <h2>Diabetic Retinopathy Classification</h2>
+    <div>
+        <a href="/">Home</a>
+        <a href="/prediction">Back</a>
+    </div>
+</div>
+
+<!-- ================= RESULT SECTION ================= -->
+
+<div class="container result-container">
+
+    <h1 class="result-title">Prediction Result</h1>
+
+    <div class="main-image">
+        <img src="{{ url_for('static', filename='uploads/' + filename) }}">
+    </div>
+
+    <div class="result-text">
+        <h2>
+            Diabetic Retinopathy Classification is :
+            <span class="stage-name">{{ prediction }}</span>
+        </h2>
+
+        <p class="confidence-text">
+            Confidence : {{ confidence }}%
+        </p>
+    </div>
+
+    <!-- ================= SAMPLE CARDS ================= -->
+
+    <div class="samples">
+
+        <div class="card {% if prediction == 'No_DR' %}active{% endif %}">
+            <img src="{{ url_for('static', filename='samples/no_dr.png') }}">
+            <p>No_DR</p>
+        </div>
+
+        <div class="card {% if prediction == 'Mild' %}active{% endif %}">
+            <img src="{{ url_for('static', filename='samples/mild.png') }}">
+            <p>Mild</p>
+        </div>
+
+        <div class="card {% if prediction == 'Moderate' %}active{% endif %}">
+            <img src="{{ url_for('static', filename='samples/moderate.png') }}">
+            <p>Moderate</p>
+        </div>
+
+        <div class="card {% if prediction == 'Severe' %}active{% endif %}">
+            <img src="{{ url_for('static', filename='samples/severe.png') }}">
+            <p>Severe</p>
+        </div>
+
+        <div class="card {% if prediction == 'Proliferative_DR' %}active{% endif %}">
+            <img src="{{ url_for('static', filename='samples/proliferative.png') }}">
+            <p>Proliferative_DR</p>
+        </div>
+
+    </div>
+
+    <a href="/prediction" class="btn">Go Back</a>
+
+</div>
+
+</body>
+</html>

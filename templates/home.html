@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diabetic Retinopathy Classification</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="navbar">
+    <div><strong>Diabetic Retinopathy Classification</strong></div>
+    <div>
+        <a href="/">Home</a>
+        <a href="#">Login</a>
+        <a href="#">Register</a>
+        <a href="/prediction">Prediction</a>
+    </div>
+</div>
+
+<div class="container">
+
+    <h2 style="margin-top:40px;">NORMAL EYE & DIABETIC RETINOPATHY</h2>
+
+    <div style="display:flex; justify-content:center; gap:80px; margin-top:40px;">
+        <div>
+            <h3>Normal Eye</h3>
+            <img src="{{ url_for('static', filename='samples/no_dr.png') }}" width="300">
+        </div>
+
+        <div>
+            <h3>Diabetic Retinopathy</h3>
+            <img src="{{ url_for('static', filename='samples/proliferative.png') }}" width="300">
+        </div>
+    </div>
+
+    <div style="margin-top:60px; background:white; padding:40px; border-radius:10px;">
+        <h2>ABOUT PROJECT</h2>
+
+        <div style="display:flex; gap:40px; margin-top:30px; text-align:left;">
+            <div style="flex:1;">
+                <h3>Problem:</h3>
+                <p>
+                    Diabetic Retinopathy is a complication of diabetes that damages the retina.
+                    If not detected early, it can lead to blindness.
+                </p>
+            </div>
+
+            <div style="flex:1;">
+                <h3>Solution:</h3>
+                <p>
+                    This project uses Deep Learning to classify retinal images into
+                    different stages of Diabetic Retinopathy through a web application.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
