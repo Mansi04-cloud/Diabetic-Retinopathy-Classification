@@ -32,4 +32,18 @@ A Flask-based web application that classifies Diabetic Retinopathy from retinal 
 ---
 
 ## 📂 Project Structure
+---
+
+## 👩‍💻 Developed By
+
+**Mansi Patil**  
+B.Tech Student | AI & ML Enthusiast  
+GitHub: https://github.com/Mansi04-cloud  
+
+---
+
+## 📌 Project Type
+
+Final Year Mini Project / Deep Learning Web Application
+
 
