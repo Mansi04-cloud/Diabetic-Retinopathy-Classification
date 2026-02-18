@@ -1,62 +1,22 @@
-# 🩺 Diabetic Retinopathy Classification Web App
+🩺 Diabetic Retinopathy Classification Web App
+📌 Project Description
 
-A Flask-based web application that classifies Diabetic Retinopathy from retinal images using a trained Deep Learning model (TensorFlow/Keras).
+This project focuses on the classification of Diabetic Retinopathy (DR) using retinal fundus images.
+The objective is to build a deep learning-based web application capable of accurately detecting and classifying different stages of diabetic retinopathy.
 
----
+By applying Convolutional Neural Networks (CNN) and transfer learning techniques, the system classifies retinal images into five categories:
 
-## 🚀 Features
+No DR
 
-- User Registration & Login System
-- Upload Retinal Image
-- AI-based Prediction using CNN Model
-- Classification into:
-  - No DR
-  - Mild
-  - Moderate
-  - Severe
-  - Proliferative DR
-- Clean UI with Flask templates
-- Model saved as `.h5`
-- Secure file uploads
+Mild
 
----
+Moderate
 
-## 🧠 Tech Stack
+Severe
 
-- Python
-- Flask
-- TensorFlow / Keras
-- HTML
-- CSS
+Proliferative DR
 
----
+The ultimate goal is to develop a reliable AI-powered system that assists in early detection and medical screening of diabetic retinopathy.
 
-## 📂 Project Structure
----
 
-## 👩‍💻 Developed By
-
-**Mansi Patil**  
-B.Tech Student | AI & ML Enthusiast  
-GitHub: https://github.com/Mansi04-cloud  
-
----
-
-## 📌 Project Type
-
-Final Year Mini Project / Deep Learning Web Application
----
-
-## ⚙️ How to Run This Project
-
-### 1️⃣ Clone the repository
-
-```bash
-git clone https://github.com/Mansi04-cloud/Diabetic-Retinopathy-Classification.git
-pip install -r requirements.txt
-python app.py
-Open in browser
-
-Go to:
-http://127.0.0.1:5000/
 
