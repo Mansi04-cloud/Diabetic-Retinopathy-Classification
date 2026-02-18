@@ -45,5 +45,18 @@ GitHub: https://github.com/Mansi04-cloud
 ## 📌 Project Type
 
 Final Year Mini Project / Deep Learning Web Application
+---
 
+## ⚙️ How to Run This Project
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/Mansi04-cloud/Diabetic-Retinopathy-Classification.git
+pip install -r requirements.txt
+python app.py
+Open in browser
+
+Go to:
+http://127.0.0.1:5000/
 
