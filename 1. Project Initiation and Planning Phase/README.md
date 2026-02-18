@@ -21,3 +21,5 @@ Early detection is crucial to prevent blindness.
 - Model Optimization
 - Web Integration
 - Testing & Deployment
+- 
+Added Project Initiation Phase
